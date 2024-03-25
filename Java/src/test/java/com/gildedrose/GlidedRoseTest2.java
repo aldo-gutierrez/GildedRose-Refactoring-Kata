@@ -138,7 +138,7 @@ public class GlidedRoseTest2 {
     //"Conjured" items degrade in Quality twice as fast as normal items
     @Test
     void conjured() {
-        GildedRose app = new GildedRose(new Item[]{new Item("Conjured Mana Cake", 3, 16)});
+        GildedRose app = new GildedRose(new Item[]{new Item(CONJURED_MANA_CAKE, 3, 16)});
         Item item = app.items[0];
         app.updateQuality();
         assertEquals(2, item.sellIn);
